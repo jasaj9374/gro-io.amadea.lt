@@ -1,1 +1,88 @@
-<H2>AJARIN GUA DONG PUH</H2>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maintenance</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #f4f6f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    h1 {
+        color: #e53935;
+        font-size: 48px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+
+    .gear {
+        animation: spin 6s linear infinite;
+        transform-origin: center;
+    }
+
+    .gear.small {
+        animation-duration: 4s;
+    }
+
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    .subtitle {
+        margin-top: 20px;
+        color: #555;
+        font-size: 18px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>MAINTENANCE</h1>
+
+    <svg width="300" height="200" viewBox="0 0 300 200">
+        
+        <!-- Gear Besar -->
+        <g class="gear">
+            <circle cx="150" cy="100" r="50" fill="#ccc"/>
+            <circle cx="150" cy="100" r="25" fill="#f4f6f9"/>
+        </g>
+
+        <!-- Gear Kecil kiri -->
+        <g class="gear small">
+            <circle cx="70" cy="120" r="30" fill="#bbb"/>
+            <circle cx="70" cy="120" r="12" fill="#f4f6f9"/>
+        </g>
+
+        <!-- Gear Kecil kanan -->
+        <g class="gear small">
+            <circle cx="230" cy="80" r="25" fill="#bbb"/>
+            <circle cx="230" cy="80" r="10" fill="#f4f6f9"/>
+        </g>
+
+        <!-- Icon orang sederhana -->
+        <circle cx="150" cy="50" r="15" fill="#e53935"/>
+        <rect x="135" y="65" width="30" height="40" fill="#e53935"/>
+
+        <!-- Kunci (tool) -->
+        <rect x="180" y="110" width="40" height="8" fill="#e53935" transform="rotate(30 180 110)"/>
+
+    </svg>
+
+    <div class="subtitle">Website sedang dalam perbaikan, mohon tunggu ya 🙏</div>
+</div>
+
+</body>
+</html>
